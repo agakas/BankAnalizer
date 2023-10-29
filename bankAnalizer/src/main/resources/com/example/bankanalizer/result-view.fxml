@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankanalizer.ResultWindowController">
+   <children>
+      <GridPane minWidth="-Infinity" prefHeight="404.0" prefWidth="550.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="464.7999755859375" minWidth="10.0" prefWidth="438.40001220703124" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="292.2000198364258" minWidth="10.0" prefWidth="111.99998779296874" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="reg" text="0" GridPane.columnIndex="1" />
+            <Label fx:id="kredit" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="teh" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="market" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="staff" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="psich" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="ability" text="0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="turn" text="0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label fx:id="finn" text="0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label fx:id="Z25" text="0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label fx:id="Z35" text="0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Label prefHeight="18.0" prefWidth="318.0" text="Оценка региональной и отраслевой специфики(reg):" textAlignment="RIGHT" />
+            <Label text="Оценка кредитоспособности(kredit):" GridPane.rowIndex="1" />
+            <Label text="Оценка технической оснащённости(teh):" GridPane.rowIndex="2" />
+            <Label text="Оценка рыночного потенциала(market):" GridPane.rowIndex="3" />
+            <Label text="Качество кадрового обеспечения(staff):" GridPane.rowIndex="4" />
+            <Label text="Оценка морально-психологического климата на предприятии(psich):" GridPane.rowIndex="5" />
+            <Label text="Оценка ликвидности(ability):" GridPane.rowIndex="6" />
+            <Label text="Оценка показателей оборачиваемости(turn):" GridPane.rowIndex="7" />
+            <Label text="Оценка финансовой устойчивости(finn):" GridPane.rowIndex="8" />
+            <Label text="Интегральный показатель финансовой устойчивости по 25 переменным(Z25):" GridPane.rowIndex="9" />
+            <Label text="Интегральный показатель финансовой устойчивости по 35 переменным(Z35):" GridPane.rowIndex="10" />
+            <Label text="Вероятность банкротства" underline="true" GridPane.rowIndex="11">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="Bankrupt" text="No" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankanalizer.AnalizeController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <TabPane prefHeight="259.0" prefWidth="751.0" tabClosingPolicy="UNAVAILABLE">
+     <tabs>
+       <Tab text="Регион. и отрасл. специфика">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <GridPane layoutX="6.0" layoutY="18.0" prefHeight="136.0" prefWidth="530.0">
+                       <columnConstraints>
+                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                       </columnConstraints>
+                       <rowConstraints>
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                       </rowConstraints>
+                        <children>
+                           <Label prefHeight="30.0" prefWidth="218.0" text="Уровень конкуренции в регионе" textAlignment="JUSTIFY" />
+                           <TextField prefHeight="26.0" prefWidth="247.0" promptText="x1" GridPane.columnIndex="1" fx:id="x1" />
+                           <Label text="Концентрация отраслевых рисков" GridPane.rowIndex="1" />
+                           <TextField promptText="x2" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="x2" />
+                           <Label text="Доля отрасли в ВРП" GridPane.rowIndex="2" />
+                           <TextField promptText="x3" GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="x3" />
+                           <Label text="Эконом. ситуация в регионе" GridPane.rowIndex="3" />
+                           <TextField promptText="x4" GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="x4" />
+                           <Label text="Влияние региональных и макроэконом. рисков" GridPane.rowIndex="4" />
+                           <TextField promptText="x5" GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="x5" />
+                        </children>
+                     </GridPane>
+                  </children>
+               </AnchorPane>
+         </content>
+       </Tab>
+       <Tab text="Кредитная история">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <GridPane layoutX="6.0" layoutY="14.0" prefHeight="122.0" prefWidth="572.0">
+                       <columnConstraints>
+                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                       </columnConstraints>
+                       <rowConstraints>
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                       </rowConstraints>
+                        <children>
+                           <Label text="Качество кредитной истории" />
+                           <TextField promptText="x6" GridPane.columnIndex="1" fx:id="x6" />
+                           <Label text="Количество полученных кредитов у предприятия" GridPane.rowIndex="1" />
+                           <TextField promptText="x7" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="x7" />
+                           <Label text="Залогоспособность" GridPane.rowIndex="2" />
+                           <TextField promptText="x8" GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="x8" />
+                           <Label text="Срок работы в регионе" GridPane.rowIndex="3" />
+                           <TextField promptText="x9" GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="x9" />
+                        </children>
+                     </GridPane>
+                  </children>
+               </AnchorPane>
+         </content>
+       </Tab>
+         <Tab text="Техн. оснащённость">
+           <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <GridPane layoutX="6.0" layoutY="14.0" prefHeight="94.0" prefWidth="540.0">
+                       <columnConstraints>
+                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                       </columnConstraints>
+                       <rowConstraints>
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                       </rowConstraints>
+                        <children>
+                           <Label text="Коэфф. парка наличного оборуд" />
+                           <TextField promptText="x10" GridPane.columnIndex="1" fx:id="x10" />
+                           <Label text="Коэфф. парка установленного оборуд" GridPane.rowIndex="1" />
+                           <TextField promptText="x11" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="x11" />
+                           <Label text="Коэфф. интенсивности загрузки оборудования" GridPane.rowIndex="2" />
+                           <TextField promptText="x12" GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="x12" />
+                        </children>
+                     </GridPane>
+                  </children>
+               </AnchorPane>
+           </content>
+         </Tab>
+         <Tab text="Рыночный потенциал">
+           <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <GridPane layoutX="5.0" layoutY="8.0" prefHeight="158.0" prefWidth="680.0">
+                       <columnConstraints>
+                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                       </columnConstraints>
+                       <rowConstraints>
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                       </rowConstraints>
+                        <children>
+                           <Label text="Коэфф. выполнения плана по ВП" />
+                           <TextField promptText="x13" GridPane.columnIndex="1" fx:id="x13" />
+                           <Label text="Оценка среднереализ. цен предпри. по отрасли" GridPane.rowIndex="1" />
+                           <TextField promptText="x14" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="x14" />
+                           <Label text="Удельный вес новой продукции в общем выпуске" GridPane.rowIndex="2" />
+                           <TextField promptText="x15" GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="x15" />
+                           <Label text="Доля крупней-го поставщика в себестоимости продукции" GridPane.rowIndex="3" />
+                           <TextField promptText="x16" GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="x16" />
+                           <Label text="Доля крупней-го покупателя в выручке" GridPane.rowIndex="4" />
+                           <TextField promptText="x17" GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="x17" />
+                        </children>
+                     </GridPane>
+                  </children>
+               </AnchorPane>
+           </content>
+         </Tab>
+         <Tab text="Кадровое обеспечение">
+           <content>
+             <AnchorPane maxHeight="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="295.0" prefWidth="622.0">
+                  <children>
+                     <GridPane layoutX="14.0" layoutY="12.0" prefHeight="202.0" prefWidth="695.0">
+                       <columnConstraints>
+                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.5999755859375" minWidth="10.0" prefWidth="392.5999755859375" />
+                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="345.4000244140625" minWidth="10.0" prefWidth="309.4000244140625" />
+                       </columnConstraints>
+                       <rowConstraints>
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                       </rowConstraints>
+                        <children>
+                           <Label text="Удельн. вес наиболее трудо-способ. и выскококвалиф. персонала" />
+                           <TextField prefWidth="177.0" promptText="x18" GridPane.columnIndex="1" fx:id="x18" />
+                           <Label text="Общий коэфф. кадрового обеспечения" GridPane.rowIndex="1" />
+                           <TextField promptText="x19" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="x19" />
+                           <Label text="Уровень квалификации сотрудников" GridPane.rowIndex="2" />
+                           <TextField promptText="x20" GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="x20" />
+                           <Label text="Индекс роста квалификации" GridPane.rowIndex="3" />
+                           <TextField promptText="x21" GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="x21" />
+                           <Label text="Квалификация штата в области фин. менеджмента" GridPane.rowIndex="4" />
+                           <TextField promptText="x22" GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="x22" />
+                           <Label text="Коэфф. текучести кадров" GridPane.rowIndex="5" />
+                           <TextField promptText="x23" GridPane.columnIndex="1" GridPane.rowIndex="5" fx:id="x23" />
+                           <Label text="Обратный коэфф. Кейтца" GridPane.rowIndex="6" />
+                           <TextField promptText="x24" GridPane.columnIndex="1" GridPane.rowIndex="6" fx:id="x24" />
+                        </children>
+                     </GridPane>
+                  </children>
+               </AnchorPane>
+           </content>
+         </Tab>
+         <Tab text="Платёжеспособность">
+           <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <GridPane layoutX="14.0" layoutY="10.0" prefHeight="186.0" prefWidth="655.0">
+                       <columnConstraints>
+                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                       </columnConstraints>
+                       <rowConstraints>
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                       </rowConstraints>
+                        <children>
+                           <Label text="Коэфф. текущей ликвидности" />
+                           <TextField promptText="x25" GridPane.columnIndex="1" fx:id="x25" />
+                           <Label text="Коэфф. обеспеч-сти собств. оборотными средствами" GridPane.rowIndex="1" />
+                           <TextField promptText="x26" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="x26" />
+                           <Label text="Период оборачиваемости дебиторской задолженности" GridPane.rowIndex="2" />
+                           <TextField promptText="x27" GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="x27" />
+                           <Label text="Период оборачиваемости кредиторской задолженности" GridPane.rowIndex="3" />
+                           <TextField promptText="x28" GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="x28">
+                              <GridPane.margin>
+                                 <Insets />
+                              </GridPane.margin>
+                           </TextField>
+                           <Label text="Отношение периодов оборачиваемости задолженности" GridPane.rowIndex="4" />
+                           <TextField promptText="x29" GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="x29" />
+                           <Label text="Период оборачиваемости остатков готовой продукции" GridPane.rowIndex="5" />
+                           <TextField promptText="x30" GridPane.columnIndex="1" GridPane.rowIndex="5" fx:id="x30" />
+                        </children>
+                     </GridPane>
+                  </children>
+               </AnchorPane>
+           </content>
+         </Tab>
+         <Tab text="Рентабельность">
+           <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="183.0" prefWidth="751.0">
+                  <children>
+                     <GridPane layoutX="14.0" layoutY="8.0" prefHeight="158.0" prefWidth="708.0">
+                       <columnConstraints>
+                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="473.6000122070312" minWidth="10.0" prefWidth="459.200048828125" />
+                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="348.4000244140625" minWidth="10.0" prefWidth="249.59995117187498" />
+                       </columnConstraints>
+                       <rowConstraints>
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                       </rowConstraints>
+                        <children>
+                           <Label text="Коэфф. фин. активности" />
+                           <TextField promptText="x31" GridPane.columnIndex="1" fx:id="x31" />
+                           <Label text="Коэфф. фин. независимости" GridPane.rowIndex="1" />
+                           <TextField promptText="x32" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="x32" />
+                           <Label text="Коэффициент обеспеченности материальных запасов собственными средствами" GridPane.rowIndex="2" />
+                           <TextField promptText="x33" GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="x33" />
+                           <Label text="Общая рентабельность" GridPane.rowIndex="3" />
+                           <TextField promptText="x34" GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="x34" />
+                           <Label text="Коэфф. рентабельности продаж" GridPane.rowIndex="4" />
+                           <TextField promptText="x35" GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="x35" />
+                        </children>
+                     </GridPane>
+                  </children>
+               </AnchorPane>
+           </content>
+         </Tab>
+     </tabs>
+   </TabPane>
+
+  <Button onAction="#onAnalizeButtonClick" text="Анализ" />
+</VBox>
